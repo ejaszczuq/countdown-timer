@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap');
 
+$layout-breakpoint-m: 960px;
+$layout-breakpoint-s: 725px;
+$layout-breakpoint-xs: 650px;
+$layout-breakpoint-xxs: 450px;
+$layout-breakpoint-extra-small: 288px;
+
 .numberBox {
     position: relative;
     width: 150px;
@@ -12,7 +18,7 @@
     font-family: 'Hind Siliguri', sans-serif;
     font-weight: bold;
     border-radius: 8px;
-    margin: 10px;
+    margin: 15px;
 
     > p {
         background: linear-gradient(to bottom, #d55272 48%, #dc6081 52%);
@@ -31,32 +37,102 @@
         z-index: 2;
         border: 0;
     }
+
+    .circleRight,
+    .circleLeft {
+        width: 7px;
+        height: 10px;
+        background-color: #191a25;
+        z-index: 3;
+        position: absolute;
+        top: 47.5%;
+        transition: all 0.3s ease;
+    }
+
+    .circleRight {
+        right: 0;
+        border-radius: 100% 0 0 100%;
+    }
+
+    .circleLeft {
+        left: 0;
+        border-radius: 0 100% 100% 0;
+    }
+
+    @media (max-width: $layout-breakpoint-m) {
+        width: 127.5px;
+        height: 114.75px;
+        box-shadow: 0px 7.225px 0px 0px #1a1a24;
+        padding-top: 6.375px;
+        font-size: 68px;
+        border-radius: 6.8px;
+        margin: 12.75px;
+        .circleRight,
+        .circleLeft {
+            width: 5.25px;
+            height: 7.5px;
+        }
+    }
+
+    @media (max-width: $layout-breakpoint-s) {
+        width: 120px;
+        height: 108px;
+        box-shadow: 0px 6.8px 0px 0px #1a1a24;
+        padding-top: 6px;
+        font-size: 64px;
+        border-radius: 6.4px;
+        margin: 12px;
+        .circleRight,
+        .circleLeft {
+            width: 4.2px;
+            height: 6px;
+        }
+    }
+
+    @media (max-width: $layout-breakpoint-xs) {
+        width: 105px;
+        height: 94.5px;
+        box-shadow: 0px 5.95px 0px 0px #1a1a24;
+        padding-top: 5.25px;
+        font-size: 56px;
+        border-radius: 5.6px;
+        margin: 10.5px;
+        .circleRight,
+        .circleLeft {
+            width: 3.15px;
+            height: 4.5px;
+        }
+    }
+
+    @media (max-width: $layout-breakpoint-xxs) {
+        width: 59.4px;
+        height: 53.46px;
+        box-shadow: 0px 3.366px 0px 0px #1a1a24;
+        padding-top: 2.97px;
+        font-size: 31.68px;
+        border-radius: 3.168px;
+        margin: 5.94px;
+
+        .circleRight,
+        .circleLeft {
+            width: 1.62px;
+            height: 2.43px;
+        }
+    }
+    @media (max-width: $layout-breakpoint-extra-small) {
+        width: 53.46px;
+    height: 48.114px;
+    box-shadow: 0px 3.0294px 0px 0px #1a1a24;
+    padding-top: 2.673px;
+    font-size: 28.512px;
+    border-radius: 2.8512px;
+    margin: 5.346px;
+
+        .circleRight,
+        .circleLeft {
+            width: 1.62px;
+            height: 2.43px;
+        }
+    }
+
 }
-
-.circleRight {
-    width: 7px;
-    height: 10px;
-    background-color: #191a25;
-    border-radius: 100% 0 0 100%;
-
-    position: absolute;
-    top: 47.5%;
-    right: 0;
-    z-index: 3;
-}
-
-.circleLeft {
-    width: 7px;
-    height: 10px;
-    background-color: #191a25;
-    border-radius: 0 100% 100% 0;
-
-    position: absolute;
-    top: 47.5%;
-    left: 0;
-    z-index: 3;
-}
-
-
-
-

@@ -5,4 +5,30 @@
     font-weight: 750;
     font-family: 'Lato', sans-serif;
     font-size: 12px;
+    margin-bottom: 10px; 
+
+    $layout-breakpoint-m: 960px;
+    $layout-breakpoint-s: 725px;
+    $layout-breakpoint-xs: 650px;
+    $layout-breakpoint-xxs: 400px;
+
+    @media (max-width: $layout-breakpoint-m) {
+        letter-spacing: 4px;
+        font-size: 11px; 
+    }
+
+    @media (max-width: $layout-breakpoint-s) {
+        letter-spacing: 3px; 
+        font-size: 10px; 
+    }
+
+    @media (max-width: $layout-breakpoint-xs) {
+        letter-spacing: 2px; 
+        font-size: 9px; 
+    }
+
+    @media (max-width: $layout-breakpoint-xxs) {
+        letter-spacing: 1px; 
+        font-size: 8px; 
+    }
 }

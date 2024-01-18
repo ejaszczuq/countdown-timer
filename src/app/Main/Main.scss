@@ -1,5 +1,9 @@
 @use "src/scss/global.scss" as *;
 
+body {
+    overflow: hidden;
+}
+
 .main-page {
     background-color: #231d2b;
     width: 100%;
@@ -14,13 +18,17 @@
         flex-direction: row;
         justify-content: center; 
         align-items: center;
-        padding-top: 300px;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        right: 50%;
+        bottom: 60%;
     }
-  }
+}
 
-  footer {
+footer {
     position: absolute;
-    bottom: 10%;
+    bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
 
@@ -53,6 +61,22 @@
     }
 }
 
+$layout-breakpoint-m: 960px;
 
+@media (max-width: $layout-breakpoint-m) {
+    .main-page {
+        background-size: 150%, 100%;
+    }
+}
 
+@media (max-height: 450px) {
+    .main-page {
+        background-size: 80%, 100%;
+    }
+}
 
+@media (max-height: 250px) {
+    .main-page {
+        background-size: 50%, 100%;
+    }
+}
