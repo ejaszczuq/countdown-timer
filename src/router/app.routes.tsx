@@ -10,7 +10,7 @@ export const appRoutes: RouteObject = {
       element: <MainPage />
     },
     {
-      path: "/*",
+      path: "*",
       element: <NotFound />
     }
   ]

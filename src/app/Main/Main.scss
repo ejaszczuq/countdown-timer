@@ -1,4 +1,58 @@
 @use "src/scss/global.scss" as *;
 
 .main-page {
+    background-color: #231d2b;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../../public/images/pattern-hills.svg"), url("../../../public/images/bg-stars.svg");
+    background-repeat: repeat-x, repeat;
+    background-position: bottom center, center, center;
+    background-size: 100%, 100%;
+
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; 
+        align-items: center;
+        padding-top: 300px;
+    }
+  }
+
+  footer {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .social-icons-container {
+        display: flex;
+
+        img {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    }
+
+    .facebook-icon {
+        content: url("../../../public/images/icon-facebook.svg");
+    }
+
+    .pinterest-icon {
+        content: url("../../../public/images/icon-pinterest.svg");
+    }
+
+    .instagram-icon {
+        content: url("../../../public/images/icon-instagram.svg");
+    }
 }
+
+.boxSection {
+    .title {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+
+
+

@@ -1,18 +1,18 @@
 import React, { FC } from "react";
 
+import "./NumberBox.scss";
+
 interface NumberBoxProps {
-    className: string;
-    title: string;
+    idProp: string;
     num: number;
 }
 
-const NumberBox: FC<NumberBoxProps> = ({className, title, num}) => {
+const NumberBox: FC<NumberBoxProps> = ({idProp, num}) => {
     return (
         
-        <><div className={className}>
-            {num}
-        </div><h2>{title}</h2></>
-        
+        <><div className="numberBox" id={idProp}>
+            <hr /><p>{num}</p><div className="circleRight" /><div className="circleLeft" />
+            </div></>
     );
 };
 
