@@ -7,6 +7,7 @@ $layout-breakpoint-xxs: 450px;
 $layout-breakpoint-extra-small: 288px;
 
 .numberBox {
+    .front, .back {
     position: relative;
     width: 150px;
     height: 135px;
@@ -58,7 +59,7 @@ $layout-breakpoint-extra-small: 288px;
         left: 0;
         border-radius: 0 100% 100% 0;
     }
-
+}
     @media (max-width: $layout-breakpoint-m) {
         width: 127.5px;
         height: 114.75px;
@@ -100,7 +101,7 @@ $layout-breakpoint-extra-small: 288px;
         .circleRight,
         .circleLeft {
             width: 3.15px;
-            height: 4.5px;
+            height: 5.5px;
         }
     }
 
@@ -116,23 +117,22 @@ $layout-breakpoint-extra-small: 288px;
         .circleRight,
         .circleLeft {
             width: 1.62px;
-            height: 2.43px;
+            height: 3.43px;
         }
     }
     @media (max-width: $layout-breakpoint-extra-small) {
         width: 53.46px;
-    height: 48.114px;
-    box-shadow: 0px 3.0294px 0px 0px #1a1a24;
-    padding-top: 2.673px;
-    font-size: 28.512px;
-    border-radius: 2.8512px;
-    margin: 5.346px;
+        height: 48.114px;
+        box-shadow: 0px 3.0294px 0px 0px #1a1a24;
+        padding-top: 2.673px;
+        font-size: 28.512px;
+        border-radius: 2.8512px;
+        margin: 5.346px;
 
         .circleRight,
         .circleLeft {
             width: 1.62px;
-            height: 2.43px;
+            height: 3.43px;
         }
     }
-
 }
