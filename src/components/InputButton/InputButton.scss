@@ -1,0 +1,60 @@
+.InputButtonContainer {
+  background-color: #2c2c449f;
+  border-radius: 12px;
+  height: 60px;
+  width: 300px;
+}
+
+button {
+  background-color: #d5527300;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  color: #d55273a8;
+  letter-spacing: 2px;
+  font-size: 30px;
+  font-weight: 400;
+  border-color: #d55273a8;
+  position: absolute;
+  bottom: 16%;
+  left: 5%;
+  z-index: 2;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #d552733b;
+  color: #d55273;
+  border-color: #d55273;
+}
+
+button:active {
+  cursor: pointer;
+  background-color: #b4516a;
+  color: #52202ca4;
+  border: 1.5px solid #52202ca4;
+}
+
+input {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border: 0;
+  height: 30px;
+  background-color: #d55273b9;
+  position: absolute;
+  left: 25px;
+  bottom: 25%;
+  text-align: center;
+  visibility: hidden;
+  padding-left: 100;
+  width: 230px;
+}
+
+input::placeholder {
+  color: #e695a9a8;
+  font-size: 12px;
+}
+input::-ms-input-placeholder {
+  color: #e695a9a8;
+  font-size: 12px;
+}
