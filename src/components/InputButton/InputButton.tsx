@@ -21,7 +21,7 @@ const InputButton: FC<InputButtonProps> = ({ id, title, setInputDate }) => {
 
   const handleClick = () => {
     setIsVisible(!isVisible);
-    setContainerWidth(isVisible ? "60px" : "300px");
+    setContainerWidth(isVisible ? "60px" : "295px");
     setButtonPosition(isVisible ? "17%" : "5%");
   };
 
